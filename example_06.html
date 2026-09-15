@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3주차_이미지태그</title>
+</head>
+<body>
+    <h1>이미지 사용</h1>
+    <img title="삼육대학교", src="https://www.syu.ac.kr/wp-content/themes/syu-main/images/logo/120_logo_black.png", width="50%">
+    
+
+    <img src="https://www.syu.ac.kr/wp-content/themes/syu-main/images/logo/120_logo_black.png" usemap="#syu-logo-map" width="50%" title="삼육대학교 로고">
+    <map name="syu-logo-map">
+    <!-- 
+        shape: 영역 모양 (rect: 사각형, circle: 원형, poly: 다각형)
+        coords: 좌표값 (픽셀 단위)
+        href: 이동할 링크 주소
+    -->
+        <area shape="rect" coords="0,0,450,150" href="https://www.syu.ac.kr" target="_blank">
+        <area shape="rect" coords="520,0,1000,150" href="https://www.syu.ac.kr/aice/" target="_blank">
+    </map>
+</body>
+</html>
