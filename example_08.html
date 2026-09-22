@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4주차 CSS</title>
+
+</head>
+
+<!--아웃라인 스타일-->
+<style>
+    * {color:blue;} /*전체 선택자*/
+    p {background-color: yellow;} /*태그 선택자*/
+    .c1 {border: 4px solid red;} /*클래스 선택자*/
+    #n1 {background-color: aqua;} /*id 선택자*/
+    ul li {color:brown} /*하위 선택자*/
+    ol>li {color:lightgreen}
+    /*링크 가상 클래스*/
+    a:link {color: black; text-decoration: none;}
+    a:visited {color: black;}
+    a:hover {color: cyan} /*마우스를 올려놨을 때*/
+    a:active {color: blueviolet} /*클릭햇을 때*/
+</style>
+
+<body>  
+    <h1 style="color: red;">CSS 스타일</h1> <!--인라인 스타일-->
+    <h2 class="c1">스타일 사용</h2>
+    
+    <p>CSS는 디자인과 정보의 분리를 위해 사용</p>
+    <p class="c1">CSS는 디자인과 정보의 분리를 위해 사용</p>
+    <ul>
+        <li id="n1">HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+
+    </ol>
+<a href="https://www.syu.ac.kr/">삼육대학</a>
+</body>
+</html>
