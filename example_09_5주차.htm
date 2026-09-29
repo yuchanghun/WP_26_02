@@ -1,11 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="KO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5주차 CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .T1 {
+
+            text-align: center;
+            color: white;
+        }
+
+        .b1 {
+            font-family: "Jua", sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            font-style: normal;
+            text-align: center;
+            color: white;
+            
+        }
+        body {
+            /*background-color: #1e3a8a;*/
+            background-image: 
+                url("https://new.syu.ac.kr/wp-content/uploads/2019/04/DSC02317.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        div {border: 3px solid red; margin:20px;}
+        #r1 {height:0px; width:610px; position: absolute; left:400px;}
+        #r2 {display :inline-block; height:200px;width:200px; position: relative; left:100px; background-image:url("https://www.syu.ac.kr/wp-content/uploads/2018/05/pg_thum.png"); background-size: cover; background-position: center;}
+        #r3 {display :inline-block; height:50px; width:400px}
+    </style>
 </head>
 <body>
+    <h1 class="T1">배경 CSS</h1>
+    <div id="r1"></div>
+    <p class="b1">background-color, background-image, background-size를 사용했습니다.</p>
+    <div id="r2"></div>
+    <div id="r3"></div>
     
 </body>
-</html>

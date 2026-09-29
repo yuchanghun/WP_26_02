@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표 과제2</title>
+    <!-- 구글 폰트 (Jua) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Jua", sans-serif;
+            text-align: center;
+            background-color: #f0f4f8;
+            margin-top: 30px;
+        }
+
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            position: absolute;
+            bottom: 20px;
+            right: 100px;
+            color: black;
+        }
+        table {
+            width: 700px;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            font-size: 1.1em;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 1em;
+            color: black;
+            
+        }
+
+        /* 교시 칸 색상 */
+        tr td:first-child {
+            background-color: #ecf0f1;
+            font-weight: bold;
+        }
+
+        td:hover {
+            background-color: #2c3e50 !important;
+            color: white; 
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.syu.ac.kr/wp-content/uploads/2018/05/pg_logo2-1.png" alt="학교 로고" width="150">
+
+    <h1>시간표 테이블</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1교시</td>
+                <td></td>
+                <td rowspan="3" style="background-color: #fb8d8d ;" title="바울관 303호">웹프로그래밍</td>
+                <td style="width: 80px;"></td>
+                <td></td>
+                <td rowspan="3" style="background-color: #82a8f5;">미적분</td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td style="background-color: #b5b4b2;">채플</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td></td>
+                <td rowspan="3" style="background-color: #f7cb84;">컴퓨터비전</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5교시</td>
+                <td rowspan="3" style="background-color: #a8e6cf;">딥러닝응용</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3" style="background-color: #76e4e8;">클라우드컴퓨팅</td>
+            </tr>
+            <tr>
+                <td>6교시</td>
+                <td></td>
+                <td rowspan="3" style="background-color: #c9a0dc;">자연어처리</td>
+            </tr> 
+            <tr>
+                <td>7교시</td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td>8교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>9교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>2022100883 유창훈</p>
+</body>
+</html>
