@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9주차 javascript</title>
+</head>
+<script>
+    //조건문
+    let num = parseInt(prompt("정수를 입력하세요."));
+
+    if (num % 2 == 0) {
+        alert("짝수 입니다.");
+    } else if (num % 2 == 1) {
+        alert("홀수 입니다.");
+    } else {
+        alert("잘못된 입력입니다.");
+    }
+
+    let score = parseInt(prompt("점수를 입력하세요."));
+
+    if (score >= 90) {
+        alert("A 입니다.");
+    } else if (score >= 80) {
+        alert("B 입니다.");
+    } else if (score >= 70) {
+        alert("C 입니다.");
+    } else if (score >= 60) {
+        alert("D 입니다.");
+    } else {
+        alert("F 입니다.");
+    }
+
+
+    // ㄴ switch case문으로 변경
+    switch(parseInt(score/10)) {
+        case 9:
+            alert("A 입니다.");
+            break;
+        case 8:
+            alert("B 입니다.");
+            break;
+        case 7:
+            alert("C 입니다.");
+            break;
+        case 6:
+            alert("D 입니다.");
+            break;
+        default:
+            alert("F 입니다.");
+    }
+    
+    switch (true) {
+        case (score >= 90):
+            alert("A 입니다.");
+            break;
+        case (score >= 80):
+            alert("B 입니다.");
+            break;
+        case (score >= 70):
+            alert("C 입니다.");
+            break;
+        case (score >= 60):
+            alert("D 입니다.");
+            break;
+        default:
+            alert("F 입니다.");
+    }
+
+    //switch문
+    let fruit = prompt("좋아하는 과일을 입력하세요. 1-사과, 2-바나나, 3-포도");
+    switch (fruit) {
+        case "1":
+            alert("사과는 100원 입니다.");
+            break;
+        case "2":
+            alert("바나나는 200원 입니다.");
+            break;
+        case "3":
+            alert("포도는 300원 입니다.");
+            break;
+        default:
+            alert("잘못된 입력입니다.");
+    }
+
+    //while 반복문
+    let i = 1;
+    while (i <= 10) { //초기식
+        document.write(i + "<br>"); //조건식
+        i++; //변경식
+    }
+
+    //for 반복문
+    for (let j = 1; j <= 10; j++) { //초기,조건,종결식
+        document.write(j + "<br>");
+    }
+    //break
+    for (let j = 1; j <= 10; j++) {
+        document.write(j + "<br>");
+        if (j == 5) 
+            break;
+        }
+        
+    
+
+    //continue
+    for (let j = 1; j <= 10; j++) {
+        document.write(j + "<br>");
+        if (j == 5) 
+            continue;
+        }
+
+    //짝수 합
+    let sum = 0;
+
+    for (let k = 1; k <= 100; k++) {
+        if (k % 2 == 0) {
+            sum += k;
+        }
+    }
+    document.write("1~100까지의 짝수 합 : " + sum + "<br>");
+
+</script>
+
+
+<body>
+    
+</body>
+</html>
