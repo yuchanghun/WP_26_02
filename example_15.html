@@ -32,42 +32,36 @@
     <script>
         $(document).ready(function() { // 문서가 준비(페이지 로딩)되면 실행되는 함수
 
-            // 1. jQuery 기본 사용
+            // 1. 문서 객체 선택
             $("#btn1").click(function() {
-                alert("jQuery");
-            });
-
-
-            // 2. 문서 객체 선택
-            $("#btn2").click(function() {
                 $(".selectText").css("color", "red");
                 $(".selectText").css("backgroundColor", "black"); 
             });
 
 
-            // 3. 문서 객체 속성 조작 - attr()
-            $("#btn3").click(function() {
+            // 2. 문서 객체 속성 조작 - attr()
+            $("#btn2").click(function() {
                 $("img").attr("src", "https://placehold.co/200x200");
             });
 
 
-            // 4. 문서 객체 내부 글자 조작 - text(), html()
-            $("#btn5").click(function() {
+            // 3. 문서 객체 내부 글자 조작 - text(), html()
+            $("#btn3").click(function() {
                 $("#t1").text('<a href="https://www.syu.ac.kr">text()</a>');
                 $("#t2").html('<a href="https://www.syu.ac.kr">html()</a>');
             });
 
 
-            // 5. 클래스 조작 - addClass(), removeClass(), toggleClass()
-            $("#btn5").click(function() {
+            // 4. 클래스 조작 - addClass(), removeClass(), toggleClass()
+            $("#btn4").click(function() {
                 $("#classText").addClass("c1");
             });
 
-            $("#btn6").click(function() {
+            $("#btn5").click(function() {
                 $("#classText").removeClass("c1");
             });
 
-            $("#btn7").click(function() {
+            $("#btn6").click(function() {
                 $("#classText").toggleClass("c1");
             });
         });
@@ -77,38 +71,33 @@
 <body>
     <h1>jQuery 실습</h1>
 
-    <h2>1. jQuery 기본 사용</h2>
-    <button id="btn1">Click me</button>
-
-    <hr>
-
-    <h2>2. 문서 객체 선택</h2>
+    <h2>1. 문서 객체 선택</h2>
     <p class="selectText">삼육대학교</p>
     <p class="selectText">인공지능융합학부</p>
     <p class="selectText">웹프로그래밍</p>
-    <button id="btn2">스타일 변경</button>
+    <button id="btn1">스타일 변경</button>
 
     <hr>
 
-    <h2>3. 속성 조작 attr()</h2>
+    <h2>2. 속성 조작 attr()</h2>
     <img><br>
-    <img src="htttps://placehold.co/100x100"><br>
-    <button id="btn3">이미지 속성 변경</button>
+    <img src="https://placehold.co/100x100"><br>
+    <button id="btn2">이미지 속성 변경</button>
 
     <hr>
 
-    <h2>4. 내부 글자 조작</h2>
+    <h2>3. 내부 글자 조작</h2>
     <p id="t1">삼육대학교</p>
     <p id="t2">인공지능융합학부</p>
-    <button id="btn5">글자 변경</button>
+    <button id="btn3">글자 변경</button>
 
     <hr>
 
-    <h2>5. 클래스 조작</h2>
+    <h2>4. 클래스 조작</h2>
     <p id="classText">클래스 변경 테스트</p>
-    <button id="btn5">클래스 추가</button>
-    <button id="btn6">클래스 제거</button>
-    <button id="btn7">클래스 전환</button>
+    <button id="btn4">클래스 추가</button>
+    <button id="btn5">클래스 제거</button>
+    <button id="btn6">클래스 전환</button>
 
     <hr>
 
