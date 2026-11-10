@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        let num1 = "";
+        let num2 = "";
+        let operator = "";
+        let result = "";
+
+        $(".num").click(function() {
+            const value = $(this).val();
+
+            if (value === "AC") {
+                num1 = "";
+                num2 = "";
+                operator = "";
+                result = "";
+                $("#disp1").val("");
+                $("#disp2").val("");
+            } else if (value === "+" || value === "-" || value === "*" || value === "/") {
+                operator = value;
+                $("#disp1").val(num1 + " " + operator);
+            } else if (value === "=") {
+                if (num1 && num2 && operator) {
+                    result = eval(num1 + operator + num2);
+                    $("#disp2").val(result);
+                }
+            } else {
+                if (!operator) {
+                    num1 += value;
+                    $("#disp1").val(num1);
+                } else {
+                    num2 += value;
+                    $("#disp1").val(num1 + " " + operator + " " + num2);
+                }
+            }
+        });
+    });
+</script>
+<style>
+    h1 {text-align: center;}
+
+    .disp {
+        width: 205px;
+        height: 40px;
+        margin-top: 4px;
+    }
+    
+    input[type="button"] {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 5px;
+    }
+
+
+    #calc {
+        width: 220px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+
+</style>
+<body>
+    <h1>계산기</h1>
+    <div id="calc">
+        <div>
+            <input type="text" class="disp" id="disp1" readonly><br>
+            <input type="text" class="disp" id="disp2" readonly>
+        </div>
+        <input type="button" class="num" value="7">
+        <input type="button" class="num" value="8">
+        <input type="button" class="num" value="9">
+        <input type="button" class="num" value="+"><br>
+        <input type="button" class="num" value="4">
+        <input type="button" class="num" value="5">
+        <input type="button" class="num" value="6">
+        <input type="button" class="num" value="-"><br>
+        <input type="button" class="num" value="1">
+        <input type="button" class="num" value="2">
+        <input type="button" class="num" value="3">
+        <input type="button" class="num" value="*"><br>
+        <input type="button" class="num" value="AC">
+        <input type="button" class="num" value="0">
+        <input type="button" class="num" value="/">
+        <input type="button" class="num" value="=">
+
+    </div>
+</body>
+</html>
